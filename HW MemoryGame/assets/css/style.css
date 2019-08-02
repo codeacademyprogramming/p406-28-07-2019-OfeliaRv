@@ -1,0 +1,86 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+}
+
+main .upper-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .upper-part .timer{
+    border: 1px solid black;
+    width: 60px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+main .upper-part .timer input{
+    background: none;
+    border: none;
+    margin-top: 4px;
+    margin-left: 2px; 
+    width: 18px;
+}
+
+main .upper-part input{
+    margin: 2% 1%;
+}
+
+main .upper-part span{
+    margin: 1%;
+}
+
+main .upper-part #score{
+    margin: 2% 1%;
+    width: 70px;
+}
+
+main .cells{
+    margin: 0 16%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+main .cells .cell{
+    height: 270px;
+    width: 270px;
+    margin: 15px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+main .cells .cell:active{
+    transform: scale(.97);
+    transition: transform .2s;
+}
+
+main .cells .cell.flip{
+    transform: rotateY(180deg);
+}
+
+main .cells .cell .frontface,
+main .cells .cell .backface{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+main .cells .cell .backface{
+    transform: rotateY(180deg);
+}
+
+main .cells .cell img{
+    overflow: hidden;
+}
+
+table{
+    width: 65.5% !important;
+    margin: 0 17%;
+}

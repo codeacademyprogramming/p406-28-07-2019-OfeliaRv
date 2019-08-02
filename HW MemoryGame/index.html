@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Memory Game</title>
+</head>
+
+<body>
+    <main>
+        <div class="upper-part">
+            <div class="timer">
+                <input id="minutes" type="text"> :
+                <input id="seconds" type="text">
+            </div>
+            <input id="entername" name="playerName" type="text" placeholder=" Enter your name">
+            <button type="submit" onclick="countdown()" id="start">Start Game!</button>
+            <span>Score:</span> <input id="score" name="score" type="text">
+        </div>
+        <div class="cells">
+            <div class="cell" id="c1" data-name="lemmor">
+                <img class="backface" src="./assets/img/lemoor.jpg" alt="lemoor">
+                <img class="frontface" src="./assets/img/frontface.jpg" alt="front">
+            </div>
+            <div class="cell" id="c2" data-name="tiger">
+                <img img class="backface" src="./assets/img/tiger.jpg" alt="tiger">
+                <img class="frontface" src="./assets/img/frontface.jpg" alt="front">
+            </div>
+            <div class="cell" id="c3" data-name="lemmor">
+                <img img class="backface" src="./assets/img/lemoor.jpg" alt="lemoor">
+                <img class="frontface" src="./assets/img/frontface.jpg" alt="front">
+            </div>
+            <div class="cell" id="c4" data-name="panda">
+                <img img class="backface" src="./assets/img/panda.webp" alt="panda">
+                <img class="frontface" src="./assets/img/frontface.jpg" alt="front">
+            </div>
+            <div class="cell" id="c5" data-name="tiger">
+                <img img class="backface" src="./assets/img/tiger.jpg" alt="tiger">
+                <img class="frontface" src="./assets/img/frontface.jpg" alt="front">
+            </div>
+            <div class="cell" id="c6" data-name="panda">
+                <img img class="backface" src="./assets/img/panda.webp" alt="panda">
+                <img class="frontface" src="./assets/img/frontface.jpg" alt="front">
+            </div>
+        </div>
+    </main>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
